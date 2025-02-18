@@ -90,9 +90,10 @@ string stringReverse(string toReverse)
 {
   stack<char> reverse; //declare the stack
   string newString = "";
-  /*
-    Your code goes here
-  */
+
+  // Start from end of string, and pop each letter to create a new, reversed string
+  for (char toReverse.)
+
   return newString;
 }
 
@@ -100,8 +101,10 @@ string stringReverse(string toReverse)
 bool parenCheck(string toCheck)
 {
   queue<char> checker; //declare my queue
+
   /*
     Your code goes here
   */
+
   return false; //need a return statement to compile
 }

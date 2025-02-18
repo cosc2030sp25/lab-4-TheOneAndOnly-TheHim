@@ -1,8 +1,7 @@
 # Lab 4
-Name:Hunter Estve
+Name: Hunter Estve
 
-> [!Help Received]
-> 
+> Help Received
 > Received:
 > - 
 > 
