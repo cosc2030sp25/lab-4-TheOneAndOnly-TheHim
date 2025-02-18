@@ -91,8 +91,22 @@ string stringReverse(string toReverse)
   stack<char> reverse; //declare the stack
   string newString = "";
 
-  // Start from end of string, and pop each letter to create a new, reversed string
-  for (char toReverse.)
+  // Put every letter into a stack, so it may be read in reverse
+  for (char letter : newString)
+  {
+    reverse.push(letter);
+  }
+
+  // Move trhough stack to create string
+  while (!reverse.empty())
+  {
+    // Pull item from stack
+    char letter = reverse.top();
+    reverse.pop();
+
+    // Add to string
+    newString = (newString + letter);
+  }
 
   return newString;
 }
@@ -102,9 +116,27 @@ bool parenCheck(string toCheck)
 {
   queue<char> checker; //declare my queue
 
-  /*
-    Your code goes here
-  */
+  // We can check if each parenthesis is matched by adding a token to the queue once finding an open parenthesis,
+  // and removing a token when meeting a closed parenthesis
+  for (char letter : toCheck)
+  {
+    if (letter == '(')
+    {
+        // Open a Parenthesis
+        checker.push(letter);
+    }
+    else if (letter == ')')
+    {
+        // Close a parenthesis
+        checker.pop();
+    }
+  }
+
+  // Now we check if the queue has successfully been cleared
+  if (checker.empty())
+  {
+    return true;
+  }
 
   return false; //need a return statement to compile
 }
