@@ -125,7 +125,7 @@ bool parenCheck(string toCheck)
         // Open a Parenthesis
         checker.push(letter);
     }
-    else if (letter == ')')
+    else if (letter == ')' && !checker.empty())
     {
         // Close a parenthesis
         checker.pop();
