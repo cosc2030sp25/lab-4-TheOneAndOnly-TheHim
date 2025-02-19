@@ -6,4 +6,4 @@ Name: Hunter Estve
 > - 
 > 
 > Given:
-> - 
+> - Jager : Helped with Functions
